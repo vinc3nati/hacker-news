@@ -22,7 +22,7 @@ export default function Index({ data, id }: { data: THNData; id: string }) {
     ...NEXT_SEO_DEFAULT,
     title: `${data.title}`,
     description: `${data.author}'s article`,
-    canonical: `https://hackernews.vercel.app/${id}`,
+    canonical: `https://hackern.vercel.app/${id}`,
     openGraph: {
       type: "article",
       article: {
