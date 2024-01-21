@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <DefaultSeo {...updateSeoConfig} />
       <ProgressBar />
       <section
-        className={`flex min-h-screen flex-col items-center gap-4 p-24 pt-5 w-full ${inter.className}`}
+        className={`flex min-h-screen flex-col items-center gap-4 md:p-24 md:pt-5 p-6 w-full ${inter.className}`}
       >
         <Component {...pageProps} />
       </section>

@@ -15,7 +15,9 @@ export default function Index() {
   return (
     <div
       className={`w-full gap-4 mt-4  ${
-        isResultEmpty ? "flex justify-center" : "grid grid-cols-3"
+        isResultEmpty
+          ? "flex justify-center"
+          : "grid md:grid-cols-3 grid-cols-2"
       } `}
     >
       {isResultEmpty && (

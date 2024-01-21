@@ -11,10 +11,11 @@ export const RenderComment = ({ comment }: { comment: THNData }) => {
   const hasChildren = comment.children && comment.children.length > 0;
 
   return (
-    <div className="mt-4">
-      <div className="flex flex-col gap-1 border border-slate-400 rounded p-2">
-        <h5 className="flex gap-1 items-start">
+    <div className="mt-4 w-full text-wrap">
+      <div className="flex flex-col flex-wrap gap-1 border w-full border-slate-400 rounded p-2">
+        <h5 className="flex gap-1 items-start w-full">
           <span
+            className="w-full"
             dangerouslySetInnerHTML={{
               __html: comment.text,
             }}

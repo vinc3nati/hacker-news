@@ -44,7 +44,7 @@ export default function Index({ data, id }: { data: THNData; id: string }) {
       {/* @ts-ignore */}
       <NextSeo {...updateSeoConfig} />
 
-      <main className="mx-auto w-full">
+      <main className="w-full">
         <header className="flex flex-col gap-1">
           <h1 className="font-bold text-xl overflow-hidden">{data.title}</h1>
           <h2 className="text-md italic flex gap-1">
