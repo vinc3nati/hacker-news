@@ -53,12 +53,15 @@ export default function Index() {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value: string = e.target.value;
     setInputText(value);
-    debouncedSetSearchQuery(value);
   };
 
   useEffect(() => {
     if (router.query.search) setInputText(() => router.query.search as string);
-  }, []);
+  }, [router.query]);
+
+  useEffect(() => {
+    debouncedSetSearchQuery(inputText);
+  }, [inputText, debouncedSetSearchQuery]);
 
   return (
     <div className="w-full">
