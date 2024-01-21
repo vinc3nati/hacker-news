@@ -18,7 +18,7 @@ export default function Card({
 
   return (
     <div
-      className="w-full max-w-[18rem] mx-auto cursor-pointer"
+      className="w-full mx-auto cursor-pointer"
       onClick={() => {
         onClick(id);
       }}
