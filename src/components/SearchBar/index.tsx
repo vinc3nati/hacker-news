@@ -61,7 +61,7 @@ export default function Index() {
 
   useEffect(() => {
     debouncedSetSearchQuery(inputText);
-  }, [inputText, debouncedSetSearchQuery]);
+  }, [inputText]);
 
   return (
     <div className="w-full">

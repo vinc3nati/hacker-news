@@ -15,4 +15,4 @@ Gauge through your favorite hacker news article with ease
 - Dynamic Routes
 - Dynamic Header
 - SEO support with openGraph
-- Better Web Vitals Score
+- Better Web Vitals [Score](https://pagespeed.web.dev/analysis/https-hackern-vercel-app/1kxg935l50?form_factor=mobile) 
