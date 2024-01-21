@@ -23,13 +23,13 @@ a {
   font-style: italic;
   text-decoration: underline;
   color: rgb(8, 107, 122);
-  overflow-wrap: break-word;  
-    word-wrap: break-word; 
-    word-break: break-word;
 }
 
-code {
+code, pre, a {
   white-space: pre-wrap;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
 }
 
 #nprogress .bar {
